@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+
+        <section class="task-input-section">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="200">
+                <select id="prioritySelect">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+        </section>
+
+        <section class="controls-section">
+            <div class="search-group">
+                <input type="text" id="searchInput" placeholder="Search tasks...">
+            </div>
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">Show All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats">
+                <span class="total-tasks">Total: <span id="totalCount">0</span></span>
+                <span class="completed-tasks">Completed: <span id="completedCount">0</span></span>
+                <span class="pending-tasks">Pending: <span id="pendingCount">0</span></span>
+            </div>
+        </section>
+
+        <section class="task-list-section">
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+            <div id="emptyState" class="empty-state">
+                <p>No tasks yet. Add one above!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
