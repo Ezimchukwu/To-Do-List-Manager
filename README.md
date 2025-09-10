@@ -1,0 +1,1 @@
+The To-Do List Manager is a simple but powerful productivity tool that lets users: Write down tasks they want to do. Mark tasks as completed. Delete tasks when done. Save tasks in the browser using localStorage so the list is not lost after refreshing. It’s like a personal task manager built with just HTML, CSS, and JavaScript.
